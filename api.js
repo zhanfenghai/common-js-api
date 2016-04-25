@@ -33,3 +33,11 @@ var dtFormat = function (dt, formatStr) {
 		return str;
 	};
 dt(datetime,"HH:mm:ss");
+
+
+/*ªÒ»°cookie*/
+function getCookie(name) {
+	var arr = document.cookie.match(new RegExp("(^| )" + name + "=([^;]*)(;|$)"));
+	if (arr != null) return unescape(arr[2]);
+		return null
+}
