@@ -41,3 +41,12 @@ function getCookie(name) {
 	if (arr != null) return unescape(arr[2]);
 		return null
 }
+
+//数组去重
+function unique(array){
+    var n = [];//临时数组
+    for(var i = 0;i < array.length; i++){
+        if(n.indexOf(array[i]) == -1) n.push(array[i]);
+    }
+    return n;
+}
