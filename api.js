@@ -50,3 +50,44 @@ function unique(array){
     }
     return n;
 }
+
+//快速排序法
+function quickSort(arr){
+	
+	if(arr.length<=1){
+		return arr;
+	}
+	var left = [];
+	var right = [];
+	
+	var num = Math.floor(arr.length/2);
+	var middleValue = arr[num];//基数
+	for(var i = 0;i<arr.length;i++){
+		if(arr[i]<middleValue){
+			left.push(arr[i]);
+		}else{
+			right.push(arr[i]);
+		}
+	}
+	return quickSort(left).concat(middleValue,quickSort(right));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
