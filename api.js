@@ -83,7 +83,10 @@ function test(){
 	var str = "again";//不可以，两者都是在同一个作用域内
 }
 
-
+//找到一个数组中的最大或最小值
+var arr = [2,34,22,45];
+Math.max.apply(Math,arr);
+Math.min.apply(Math,arr);
 
 
 
