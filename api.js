@@ -72,8 +72,16 @@ function quickSort(arr){
 	return quickSort(left).concat(middleValue,quickSort(right));
 }
 
+//es6中相同作用域下不可以重复声明变量
+{
+	let a = 2;
+	var a = 3;//可以，因为var声明的是全局变量，let声明局部变量
+}
 
-
+function test(){
+	let str = "test";
+	var str = "again";//不可以，两者都是在同一个作用域内
+}
 
 
 
